@@ -40,12 +40,36 @@
     <None Include="vertexShader.vert">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="..\Lesson07\texturedCube.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Lesson07\texturedCube.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\t3\multipleLight.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\t3\multipleLight.vert">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="crate.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="marble.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\t3\lantai1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\t3\lantaispecularmap.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\t3\speaker0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\t3\speakerterang.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

@@ -22,6 +22,7 @@
     <ProjectGuid>{4DBE4DFC-0492-4285-855F-4A74E7D06862}</ProjectGuid>
     <RootNamespace>Lesson02</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Tugas 3</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -135,10 +136,18 @@
     <ClInclude Include="RenderEngine.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Lesson07\texturedCube.frag" />
+    <None Include="..\Lesson07\texturedCube.vert" />
+    <None Include="..\t3\multipleLight.frag" />
+    <None Include="..\t3\multipleLight.vert" />
     <None Include="fragmentShader.frag" />
     <None Include="vertexShader.vert" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\t3\lantai1.png" />
+    <Image Include="..\t3\lantaispecularmap.png" />
+    <Image Include="..\t3\speaker0.png" />
+    <Image Include="..\t3\speakerterang.png" />
     <Image Include="crate.png" />
     <Image Include="marble.png" />
   </ItemGroup>

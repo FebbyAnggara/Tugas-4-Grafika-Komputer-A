@@ -263,13 +263,13 @@ void Demo::DrawColoredPlane()
 
 	// set lighting materials attributes (yellow plastic)
 	GLint ambientMatLoc = glGetUniformLocation(this->activeProgram, "material.ambient");
-	glUniform3f(ambientMatLoc, 0.0f, 0.0f, 0.0f);
+	glUniform3f(ambientMatLoc, 0.02f, 0.02f, 0.20f);
 	GLint diffuseMatLoc = glGetUniformLocation(this->activeProgram, "material.diffuse");
-	glUniform3f(diffuseMatLoc, 0.5f, 0.5f, 0.0f);
+	glUniform3f(diffuseMatLoc, 0.01f, 0.01f, 0.01f);
 	GLint specularMatLoc = glGetUniformLocation(this->activeProgram, "material.specular");
-	glUniform3f(specularMatLoc, 0.60f, 0.60f, 0.50f);
+	glUniform3f(specularMatLoc, 0.4f, 0.4f, 0.4f);
 	GLint shininessMatLoc = glGetUniformLocation(this->activeProgram, "material.shininess");
-	glUniform1f(shininessMatLoc, 10.0f);
+	glUniform1f(shininessMatLoc, 0.078125f);
 
 	glm::mat4 model;
 	GLint modelLoc = glGetUniformLocation(this->activeProgram, "model");
@@ -290,7 +290,7 @@ void Demo::BuildTexturedCube()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	int width, height;
-	unsigned char* image = SOIL_load_image("crate_diffusemap.png", &width, &height, 0, SOIL_LOAD_RGBA);
+	unsigned char* image = SOIL_load_image("speaker.png", &width, &height, 0, SOIL_LOAD_RGBA);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
 	SOIL_free_image_data(image);
 	glBindTexture(GL_TEXTURE_2D, 0);
@@ -299,7 +299,7 @@ void Demo::BuildTexturedCube()
 	glBindTexture(GL_TEXTURE_2D, stexture);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	image = SOIL_load_image("crate_specularmap.png", &width, &height, 0, SOIL_LOAD_RGBA);
+	image = SOIL_load_image("speaker3.png", &width, &height, 0, SOIL_LOAD_RGBA);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
 	SOIL_free_image_data(image);
 	glBindTexture(GL_TEXTURE_2D, 0);
